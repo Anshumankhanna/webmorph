@@ -1,0 +1,19 @@
+.side-bar > div {
+    @apply rounded-md
+    border
+    border-transparent
+    full p-1
+    flex
+    flex-col
+    items-center
+    justify-evenly
+    text-sm
+    font-semibold
+    hover:border-gray-600
+    hover:shadow-[0_0_5px_gray]
+    hover:underline;
+}
+
+.side-bar > div > div {
+    @apply h-8;
+}
