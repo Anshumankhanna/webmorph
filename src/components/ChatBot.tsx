@@ -1,7 +1,7 @@
 "use client";
 
 import { useApiContext } from "@/context/ApiContext";
-import { Appearance, Output } from "@/models/MorphieResponse";
+import { Appearance, Output } from "@/types/MorphieResponse";
 import { FormEvent, useEffect, useState } from "react";
 
 export default function ChatBot() {

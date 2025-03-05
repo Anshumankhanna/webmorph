@@ -1,6 +1,6 @@
 "use client";
 
-import { Appearance } from "@/models/MorphieResponse";
+import { Appearance } from "@/types/MorphieResponse";
 import { createContext, useState, ReactNode, useContext, Dispatch, SetStateAction } from "react";
 
 type ApiData = {

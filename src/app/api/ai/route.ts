@@ -1,4 +1,4 @@
-import { Appearance, MorphieResponse, Output } from "@/models/MorphieResponse";
+import { Appearance, MorphieResponse, Output } from "@/types/MorphieResponse";
 import { NextResponse } from "next/server";
 
 export async function GET(request: Request): Promise<NextResponse<Output | Appearance[] | { error: string }>> {

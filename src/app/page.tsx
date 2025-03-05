@@ -5,7 +5,7 @@ import LayoutDisplay from "@/components/LayoutDisplay";
 import Morphie from "@/components/Morphie";
 import SideBar from "@/components/SideBar";
 
-const page = () => {
+export default function Page() {
 	return (
 		<div className="full flex flex-grow">
 			<SideBar />
@@ -14,11 +14,8 @@ const page = () => {
 					<Morphie />
 					<ChatBot />
 				</div>
-
 				<LayoutDisplay />
 			</div>
 		</div>
 	);
 };
-
-export default page;
