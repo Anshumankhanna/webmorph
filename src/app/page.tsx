@@ -1,5 +1,7 @@
 export default function Home() {
   return (
-    <div>Making webmorph</div>
+    <div>
+      Make frontend here
+    </div>
   );
 }

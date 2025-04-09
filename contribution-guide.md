@@ -1,0 +1,2 @@
+- Refer to [result.ts](./src/types/result.ts) for result of functions that can return error.
+- Refer to [try-catch.ts](./src/utils/try-catch.ts) for error handling of promise functions.
