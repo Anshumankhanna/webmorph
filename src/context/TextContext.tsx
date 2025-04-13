@@ -2,12 +2,12 @@
 
 import React, { createContext, Dispatch, SetStateAction, useContext, useState } from "react";
 
-type TextContextStateType = {
+export type TextContextStateType = {
 	family: string;
 	size: string;
 	color: string;
 };
-type TextContextValueType = {
+export type TextContextValueType = {
 	text: TextContextStateType;
 	setText: Dispatch<SetStateAction<TextContextStateType>>;
 };
@@ -23,7 +23,7 @@ export default function TextContextProvider({ children }: Readonly<{
 	children: React.ReactNode
 }>) {
 	const [text, setText] = useState<TextContextStateType>(DefaultTextContextState);
-	
+
 	return (
 		<TextContext.Provider value={{ text, setText }}>
 			{children}
