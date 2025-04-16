@@ -5,7 +5,7 @@ import asyncTryCatch from "@/utils/async-try-catch";
 import { useState } from "react";
 
 export default function Home() {
-  const [data, setData] = useState<BotOutput | null>(null);
+  const [, setData] = useState<BotOutput | null>(null);
   const [input, setInput] = useState("");
   const [loading, setLoading] = useState(false);
 
@@ -20,7 +20,6 @@ export default function Home() {
       return;
     }
 
-    console.log(botOutput.data);
     setData(botOutput.data);
   }
 
