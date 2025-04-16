@@ -1,12 +1,10 @@
 import { Result } from "@/types/result";
 
-export default async function tryCatch<T, E = Error>(
-	promise: Promise<T>
-): Promise<Result<T, E>> {
+export default function tryCatch<T>(func: () => T): Result<T> {
 	try {
-		const data = await promise;
+		const data = func();
 		return { data, error: null };
 	} catch (error) {
-		return { data: null, error: error as E };
+		return { data: null, error: error as Error };
 	}
 }
