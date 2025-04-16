@@ -2,7 +2,8 @@
 
 import requestBot, { BotOutput } from "@/actions/request-bot";
 import asyncTryCatch from "@/utils/async-try-catch";
-import { useState } from "react";
+import tryCatch from "@/utils/try-catch";
+import { useEffect, useState } from "react";
 
 export default function Home() {
 	const [, setData] = useState<BotOutput | null>(null);
